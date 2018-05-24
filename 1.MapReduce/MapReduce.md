@@ -6,7 +6,17 @@
 맵(Map)은 입력 파일을 한 줄씩 읽어서 데이터를 변형(transformation)하며, 리듀스(Reduce)는 맵의 결과 데이터를 집계(aggregation)한다.
 
 ![png](0.png)
+
 [Image source : opentutorials](https://opentutorials.org/module/2926/17055)
+
+1. 입력 파일을 읽는다.
+1. 각 행을 mapper에 전달
+1. mapping : 모든 key를 value 1로 매핑한다.
+1. 키를 섞고, 정렬
+1. reducing : key별로 출현횟수를 합산
+1. 하나의 파일로 모은다.
+
+ps. Apache Mesos 같은 클러스터 관리자를 사용할 수 있다.
 
 ```python
 from mrjob.job import MRJob
