@@ -27,6 +27,7 @@
 
 ### 기본 설정
 VirtualBox - hortenworks sandbox 이용
+data source - [GroupLens Research](https://grouplens.org/datasets/movielens/)의 ml-100k 이용
 
 1. **Web interface**
  - http://127.0.0.1:8888/ 로 접속
@@ -45,14 +46,3 @@ VirtualBox - hortenworks sandbox 이용
 
 ## Spark
 맵리듀스와 유사한 클러스터 컴퓨팅 프레임 워크
-- 하지만 분산 파일 시스템 상의 파일에 대한 저장과 자원관리를 하지 않는다.
-  - 따라서 하둡의 다른 시스템에 의존
-- 회복가능 분산 데이터셋(Resilient Distributed Datasets, RDD)를 사용
-  - RDD는 분산된 메모리 추상화로써, 메모리 내에서 계산을 수행하게 해줌.
-
-  #### Spark의 구성
-  NoSQL 환경 제공, 일괄처리 및 대화형 모드 실행 가능
-  - Spark streaming : 실시간 분석
-  - Spark SQL
-  - MLLib : 머신러닝
-  - GraphX : 그래프 데이터베이스
